@@ -1,38 +1,124 @@
-.App {
-  text-align: center;
+.App{
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  height: 600px;
+  justify-content: center;
 }
-
-.App-logo {
-  height: 40vmin;
-  pointer-events: none;
+@font-face {
+  font-family: "myFont";
+  src: url("fonts/BebasNeue-Regular.ttf");
 }
-
-@media (prefers-reduced-motion: no-preference) {
-  .App-logo {
-    animation: App-logo-spin infinite 20s linear;
-  }
-}
-
-.App-header {
-  background-color: #282c34;
-  min-height: 100vh;
+.license-box{
+  border: 8px solid rgb(234, 230, 230);
+  width: 450px;
+  height: 480px;
+  background-color:rgb(246, 246, 246) ;
   display: flex;
   flex-direction: column;
   align-items: center;
   justify-content: center;
-  font-size: calc(10px + 2vmin);
+}
+
+.license-box .first-part{
+  border-bottom:2px solid rgb(234, 230, 230);
+  height: 150px;
+  width: 400px;
+ 
+
+}
+.license-box .form-check{
+  display: flex;
+  justify-content: space-around;
+ padding-top: 10px;
+}
+ .selected{
+  border: 1px solid #85b0ef;
+  background-color: #dfedff;
+}
+.license-box .form-check .form-elmnts{
+  text-transform: uppercase;
+  display: flex;
+  justify-content: space-between;
+  width: 90px;
+  color: rgb(104, 103, 103);
+}
+.license-box .form-check .form-elmnts input{
+  border: 4px solid rgb(234, 230, 230);
+  width: 23px;
+  height: 23px;
+}
+.license-box .form-check .form-elmnts  label{
+  font-family: "myFont";
+  font-weight: 400;
+
+}
+.license-box .form-check p{
+  font-size: 13px;
+  color:rgb(173, 173, 173);
+}
+.license-box .second-part{
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  width: 400px;
+  border-bottom:2px solid rgb(234, 230, 230);
+
+}
+.license-box .select-count-box{
+  display: flex;
+  justify-content: space-between;
+  width: 170px;
+  padding-top: 10px;
+
+}
+
+
+.license-box .select-count-box p{
+  font-size: 13px;
+  font-family: 'Times New Roman', Times, serif;
+}
+.license-box .select-count-box select{
+   height: 23px;
+   width: 50px;
+   border:1px solid #0D6EFD;
+
+}
+select:focus{
+  outline:1px solid #0D6EFD;
+
+}
+.total-amount-box {
+  display: flex;
+  flex-direction: column;
+  align-items:center;
+  justify-content: center;
+  height: 150px;
+}
+.total-amount-box .button{
+  width: 150px;
+  height: 35px;
+  border-radius: 20px;
+  text-transform: uppercase;
+  font-size: 12px;
+  text-align: center;
+  padding-top: 8px;
+  text-decoration: none;
+  border: none;
+  background-color: rgb(9, 169, 9);
   color: white;
 }
-
-.App-link {
-  color: #61dafb;
+.total-amount-box .amount-text h1{
+  color: rgb(104, 103, 103);
+  text-transform: uppercase;
+  font-family:'myFont';
+  font-size: 23px;
+}
+.total-amount-box .amount-text span{
+  color: #0D6EFD;
+}
+.plan-num{
+  text-align: center;
+  color: #0D6EFD;
 }
 
-@keyframes App-logo-spin {
-  from {
-    transform: rotate(0deg);
-  }
-  to {
-    transform: rotate(360deg);
-  }
-}
